@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Islamiyat Mastery Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="chapters.html">Chapters</a>
+    <a href="quizzes.html">Quizzes</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="planner.html">Planner</a>
+  </nav>
+
+  <header>
+    <h1>📘 Islamiyat Mastery Hub</h1>
+    <p>Track your progress, take quizzes, and conquer the syllabus!</p>
+  </header>
+
+  <section class="dashboard">
+    <h2>📊 Your Progress</h2>
+    <ul id="chapterList">
+      <li><input type="checkbox"> <a href="beliefs.html">Basic Beliefs & Practices</a></li>
+      <li><input type="checkbox"> The Qur’an</li>
+      <li><input type="checkbox"> Hadith & Sunnah</li>
+      <li><input type="checkbox"> Life of Prophet Muhammad (PBUH)</li>
+      <li><input type="checkbox"> Rightly Guided Caliphs</li>
+      <li><input type="checkbox"> Islamic Social Teachings</li>
+    </ul>
+  </section>
+
+  <section class="quiz">
+    <h2>🧠 Quiz: Basic Beliefs & Practices</h2>
+    <div id="quizContainer"></div>
+    <button onclick="submitQuiz()">Submit Answers</button>
+    <p id="result"></p>
+  </section>
+
+  <section class="flashcards">
+    <h2>📇 Flashcards: Basic Beliefs & Practices</h2>
+    <div id="flashcardContainer"></div>
+    <button onclick="nextCard()">Next Card</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
